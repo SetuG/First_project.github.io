@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<link rel = "stylesheet" href="gym-style.css">
+<style>
+    body{ /* CSS Reset*/
+        font-family: 'Orbitron', sans-serif;
+        color: rgb(0, 1, 2);
+        margin: 0px;
+        padding: 0px;
+        background: url('img/boxing.jpg');
+        /*background-repeat: no-repeat;
+        background-size: 50%;*/
+
+    }
+
+    .left{
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        
+    }
+
+    .left img{
+        width: 100px;
+    }
+
+    .left div{
+        text-align: center;
+    }
+
+    .mid{
+        display: block;
+        width: 46%;
+        margin: 12px auto;
+        
+    }
+
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 27px;
+        display: inline-block;
+        
+    }
+
+    .navbar{
+        display: inline-block;
+        
+    }
+
+    .navbar li{
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover{
+        text-decoration: underline;
+        color: blanchedalmond ;
+    }
+
+    .btn{
+        font-family: 'Orbitron', sans-serif;
+        margin: 0px 9px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        padding: 6px 2px;
+        border: 2px solid aliceblue;
+        border-radius: 5px;
+        
+        
+    }
+
+    .btn:hover{
+        background-color: rgb(59, 59, 59);
+
+    }
+
+    .container{
+        border: 2px solid whitesmoke;
+        color: white;
+        margin: 122px 498px;
+        padding: 19px 19px;
+        width: 33%;
+        border-radius: 2px;
+
+    }
+
+    .form-group input{
+        font-family: 'Orbitron', sans-serif;
+        text-align: center;
+        display: block;
+        width: 194px;
+        border: 2px solid black;
+        margin: 10px auto;
+        padding: 5px 52px;
+        border-radius: 8px;
+    }
+
+    .container h1{
+        text-align: center;
+    }
+
+    .container button{
+        display: block;
+        width: 53%;
+        margin: 18px auto;
+
+    }
+
+    
+    
+</style>
+<body>
+    <header class = "header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/annotation-2675672_1280.png" alt="">
+            <div style=" line-height: 29px; font-size: 15px;">Say2 Fitness</div>
+            
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class = "mid">
+            <ul class = "navbar">
+                <li><a href = "#">Home</a></li>
+                <li><a href = "#">About us</a></li>
+                <li><a href = "#">Fitness-calculator</a></li>
+                <li><a href = "#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <!-- right for buttons -->
+        <div class = "right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+            
+
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the best gym now</h1>
+         <form action = "noaction.php"> <!--it will be a backend php when done -->
+            <div class="form-group">
+                <input type = "text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type = "text" name="" placeholder="Enter your Age"> 
+            </div>
+            <div class="form-group">
+                <input type = "number" name="" placeholder="Enter your Phone no.">
+            </div>
+            <div class="form-group">
+                <input type = "email" name="" placeholder="Enter your Email ID">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+        
+    </div>
+    
+</body>
+</html>
